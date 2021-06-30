@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>assi4</title>
+
+<style>
+ table,tr,td {
+ border: 1px solid black;
+ border-collapse:collapse;
+ }
+ 
+ table{
+ width:500px;
+ height:200px;
+ }
+ 
+ .spanning{
+ background-color:#ADD8E6;
+ }
+ 
+ .yellow{
+ background-color:yellow;
+ }
+ 
+ .red{
+ background-color:red;
+ }
+ 
+ .img1{
+ width: 100px;
+ height: 100px;
+ }
+ 
+ .img2{
+ width: 60px;
+ height: 50px;
+ }
+ 
+</style>
+</head>
+<body>
+ <table>
+  <tr class="spanning">
+  <td rowspan="3">this is spanning all three rows</td>
+  <td colspan="3">I am spanning three columns</td>
+  </tr>
+  
+  <tr>
+  <td class="yellow">data</td>
+  <td class="yellow">boring old data</td>
+  <td><img src="img/butterfly.jpg" class="img1"></td>
+  </tr>
+  
+  <tr>
+  <td class="red">red data</td>
+  <td><img src="img/bird.jpg" class="img2">more data</td>
+  <td class="spanning">last of the data</td>
+  </tr>
+ </table>
+</body>
+</html>
