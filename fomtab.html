@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>formtab</title>
+<style>
+  table{
+   margin:120px 250px;
+  }
+  
+table,th,td{
+ <!-- border:1px solid black; -->
+border-collapse:collapse;
+background-color:pink;
+}
+
+.gender{
+ font-size:13px;
+}
+
+#address{
+width:140px;
+height:16px;
+}
+
+.srnum,.examination{
+text-align:center;
+}
+
+
+ </style>
+</head>
+<body>
+
+<table>
+ <form>
+   <tr>
+  <th colspan="6">STUDENT REGISTRATION FORM</th>
+  </tr>
+   
+   <tr>
+  <td><label for="fname">FIRST NAME</label></td>
+  <td><input id="fname" type="text" name="first name" placeholder="Enter your First name"></td>
+  <td>(max 30 character a-z and A-Z)</td>
+  </tr>
+  
+  <tr>
+  <td><label for="lname">LAST NAME:</label></td>
+  <td><input id="lname" type="text" name="last name" placeholder="Enter your Last name"></td>
+  <td>(max 30 character a-z and A-Z)</td>
+  </tr>
+  
+  <tr>
+  <td><label for="dob">DATE-OF-BIRTH:</label></td>
+  <td><input id="dob" type="date-of-birth" placeholder="dd-mm-yyy"></td>
+</tr>
+  
+  <tr>
+  <td><label for="email">EMAIL-ID:</label></td>
+  <td><input id="email" type="email" name="email-id" placeholder="Enter your email-id"></td>
+  </tr>
+  
+  <tr>
+  <td><label for="mob">MOBILE NUMBER:</label></td>
+  <td><input id="mob" type="text" name="mob num." placeholder="Enter your mobile number"></td>
+  </tr>
+  
+  <tr>
+  <td><label for="gender">GENDER:</label></td>
+  <td class="gender"><input id="male" type="radio" name="gender">
+	 	 <label for="male">MALE</label>	
+	 
+	 <input id="female" type="radio" name="gender">
+	 	<label for="female">FEMALE</label></td>
+  </tr>
+  
+  <tr>
+  <td><label for="address">ADDRESS:</label></td>
+  <td><textarea id="address">Enter address</textarea></td>
+  </tr>
+  
+  <tr>
+  <td><label for="cities">CITY:</label></td>
+  <td><input id="cities" list="city" placeholder="Enter city">
+		<datalist id="city">
+		<option value="Wardha">
+		<option value="Nagpur">
+		<option value="Pune">
+		<option value="Mumbai">
+		<option value="Delhi">
+		<option value="Bangalore">
+		<option value="Hydrabad">
+		<option value="Ahmedabad">
+		<option value="Kolkata">
+		<option value="Chennai">
+		<option value="Jaipur">
+		</datalist></td>
+  <td>(max 30 character a-z and A-Z)</td>
+  </tr>
+  
+  <tr>
+  <td><label for="pin">PINCODE:</label></td>
+  <td><input id="pin" type="text" name="pincode" placeholder="Enter your pincode"></td>
+  <td>(6 digit number)</td>
+  </tr>
+  
+     <tr>
+  <td><label for="states">STATE:</label></td>
+  <td><input id="states" list="state" placeholder="Enter state">
+		<datalist id="state">
+		<option value="Maharashtra">
+		<option value="Goa">
+		<option value="Rajastan">
+		<option value="Madhya pradesh">
+		<option value="Uttar pradesh">
+		<option value="Karnataka">
+		<option value="Assam">
+		<option value="Bihar">
+		<option value="Kerala">
+		<option value="Manipur">
+		<option value="Punjab">
+		</datalist></td>
+  <td>(max 30 character a-z and A-Z)</td>
+  </tr>
+  
+     <tr>
+  <td><label for="country">COUNTRY:</label></td>
+  <td><input id="country" type="text" name="country" placeholder="Enter country"></td>
+  </tr>
+  
+     <tr>
+  <td><label>HOBBY:</label></td>
+  <td><input id=="drawing" type="checkbox">
+		<label for="drawing">Drawing</label></td>
+  <td><input id=="Singing" type="checkbox">
+		<label for="Singing">SINGING</label></td>
+  <td><input id=="dancing" type="checkbox">
+		<label for="dancing">DANCING</label></td>
+  <td><input id=="sketching" type="checkbox">
+		<label for="sketching">SKETCHING</label></td>
+  <td><input id=="other" type="checkbox">
+		<label for="other">OTHER</label></td>
+  </tr>
+  
+     <tr>
+  <th>QUALIFICATION</th>
+  <th>Sr.No.</th>
+  <th>Examination</th>
+  <th>Board</th>
+  <th>Percentage</th>
+  <th>Year of passing</th>
+  </tr>
+  
+     <tr>
+	  <td></td>
+	  <td class="srnum">1</td>
+	  <td class="examination">ClassX</td>
+	  <td><input type="text" name="board" placeholder="classX board"></td>
+	  <td><input type="text" name="percentage" placeholder="classX percentage"></td>
+	  <td><input type="text" name="yop" placeholder="classX yop"></td>
+	 </tr>
+	 
+	 <tr>
+	  <td></td>
+	  <td class="srnum">2</td>
+	  <td class="examination">ClassXII</td>
+	  <td><input type="text" name="board" placeholder="classXII board"></td>
+	  <td><input type="text" name="percentage" placeholder="classXII percentage"></td>
+	  <td><input type="text" name="yop" placeholder="classXII yop"></td>
+	 </tr>
+	 
+	 <tr>
+	  <td></td>
+	  <td class="srnum">3</td>
+	  <td class="examination">Graduation</td>
+	  <td><input type="text" name="board" placeholder="graduation board"></td>
+	  <td><input type="text" name="percentage" placeholder="graduation percentage"></td>
+	  <td><input type="text" name="yop" placeholder="graduation yop"></td>
+	 </tr>
+	 
+	 <tr>
+	  <td></td>
+	  <td class="srnum">4</td>
+	  <td class="examination">Master</td>
+	  <td><input type="text" name="board" placeholder="Master board"></td>
+	  <td><input type="text" name="percentage" placeholder="Master percentage"></td>
+	  <td><input type="text" name="yop" placeholder="Master yop"></td>
+	 </tr>
+	 
+	 <tr>
+	  <td>COURSES APPLIED FOR</td>
+	  <td><input id="bca" type="radio" name="courses">
+	 	 <label for="bca">BCA</label></td>
+	  <td><input id="bcom" type="radio" name="courses">
+	 	 <label for="bcom">B.Com</label></td>
+	  <td><input id="bsc" type="radio" name="courses">
+	 	 <label for="bsc">B.sc</label></td>
+	  <td><input id="ba" type="radio" name="courses">
+	 	 <label for="ba">B.A</label></td>
+	  <td><input id="be" type="radio" name="courses">
+	 	 <label for="be">B.E</label></td>
+	 </tr>
+	 
+	 <tr>
+	  <td colspan="6"><button>submit</button>
+		  <button>reset</button></td>
+	 </tr>
+ </form>
+</table>
+</body>
+</html>
