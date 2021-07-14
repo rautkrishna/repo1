@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>formassi9</title>
+  
+  <style>
+  .outer,th,td{
+    border-collapse:collapse;
+	text-align:center;
+  }
+  
+  .outer{
+   width:600px;
+   height:300px;
+  }
+  
+  .graycolor{
+    background-color:gray;
+	font-weight:bold;
+  }
+  
+  .greencolor{
+    background-color:#ccffb3; 
+	font-weight:bold;
+  }
+  
+  fieldset{
+   border:1px solid gray;
+   width: 400px;
+   height:200px;
+   margin:20px 0 20px 40px;   
+  }
+ 
+ .inner{
+   background-color:#ccffb3; 
+   margin-left:70px;
+   margin-top:20px;
+   border-collapse:collapse;
+   height:150px;
+ } 
+ b{
+  color:green;
+ }
+ 
+ p{
+ font-size:16px;
+ }
+  
+  </style>
+ </head>
+ <body>
+  <table class="outer">
+   <form>
+    <tr>
+	 <td colspan="2" class="graycolor">Assignment 7</td>
+	</tr>
+	
+	<tr>
+	 <td class="graycolor">Home</td>
+	 <td class="greencolor">Mad Libs</td>
+	</tr>
+	
+	<tr>
+	 <td class="graycolor">Mad Libs</td>
+	 <td rowspan="2" class="greencolor">
+	 <fieldset class="greencolor">
+	  <table class="inner">
+	   <form>
+	    <tr>
+		 <td><label for="pname">Person Name:</label></td>
+		 <td><input id="pname" type="text" name="prsnname" value="Superman"></td>
+		</tr>
+		
+		<tr>
+		 <td><label for="char">Character:</label></td>
+		 <td><input id="char" type="text" name="character" value="Batman"></td>
+		</tr>
+		
+		<tr>
+		 <td><label for="advb">Adverb:</label></td>
+		 <td><input id="advb" type="text" name="adverb" value="quickly"></td>
+		</tr>
+		
+		<tr>
+		 <td><label for="adjec">Adjective:</label></td>
+		 <td><input id="adjec" type="text" name="adjective" value="mean"></td>
+		</tr>
+		
+		<tr>
+		 <td colspan="2"><input type="button" value="Tell Story"></td>
+		</tr>
+		
+	   </form>
+	  </table>
+	 </fieldset> 
+	 <fieldset>
+	   <h2>Wendy's Crazy MadLibs Story</h2>
+	   <p>
+	   One day, my friend <b>Superman</b> was visiting New York and ran into <b>Badman</b>. <b>Supermanran</b> ran <b>quickly</b> to meet <b>Batman</b>. But <b>Batman</b> turned out to be very <b>mean</b> and <b>Superman</b> did not enjoy the meeting.
+	   </p>
+	 </fieldset>
+	 </td>
+	</tr>
+	
+	<tr>
+	 <td class="graycolor">Tom Thumb</td>
+	</tr>
+	
+   </form>
+  </table>
+ </body>
+</html>

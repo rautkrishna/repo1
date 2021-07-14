@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>formassi10</title>
+
+<style>
+ div{
+  border:2px solid black;
+  width:600px;
+ }
+ 
+ form{
+ font-size:18px;
+ }
+ 
+ h1{
+  text-align:right;
+ }
+ 
+ h3{
+ color:brown;
+ }
+ 
+ textarea{
+ width:450px;
+ }
+ 
+ label{
+ font-weight:bold;
+ }
+ 
+ button{
+ margin-left:50px;
+ }
+ 
+</style>
+
+</head>
+<body>
+<div>
+<form>
+ <h1>	Evergreen Valley College Survey</h1>
+ <a href="#">Email webmaster</a> | <a href="#">Evergreen Valley College Website</a>
+ 
+ <h3>Personal Information</h3>
+ <label for="name">Name:</label><input id="name" type="text" name="name">
+ <br><br>
+ <label for="email">Email:</label><input id="email" type="email" name="emailid">
+ <br></br>
+ <label>Age:</label>
+ <input id="<18" type="radio" name="age"><label for="<18"><18</label>
+ <input id="18-25" type="radio" name="age"><label for="18-25">18-25</label>
+ <input id="26-40" type="radio" name="age"><label for="26-40">26-40</label>
+ <input id="41-65" type="radio" name="age"><label for="41-65">41-65</label>
+ <input id="65+" type="radio" name="age"><label for="65+">65+</label>
+ 
+ <h3>Academic Information </h3>
+ <label>Goals:</label>Check all that apply<br>
+ <input id="assdeg" type="checkbox"><label for="assdeg">Associate Degree</label>
+ <input id="ttcsu" type="checkbox"><label for="ttcsu">Transfer to CSU</label>
+ <input id="ttuc" type="checkbox"><label for="ttuc">Transfer to UC</label><br>
+ <input id="peren" type="checkbox"><label for="peren">Personal Enrichment</label>
+ 
+ <br><br>
+ <label>Field of Study:</label>Select all that apply, hold CTRL when clicking to select multiple items.
+ <br><br>
+ <select size="6">
+ <option value="Accounting">Accounting</option>
+ <option value="Astronomy">Astronomy</option>
+ <option value="Business">Business</option>
+ <option value="Chemistry">Chemistry</option>
+ <option value="Computer Information Systems">Computer Information Systems</option>
+ <option value="Health">Health</option>
+ </select>
+ 
+ <br><br>
+ <label for="com">Comments:</label>
+ <textarea id="com"></textarea>
+ <br><br>
+ 
+ <button>	Send Data</button>
+ <button>Reset Form</button>
+</form>
+</div>
+</body>
+</html>
