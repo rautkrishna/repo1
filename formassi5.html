@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>formassi3</title>
+
+<style>
+div{
+background-color:yellow;
+width:700px;
+height:330px;
+}
+
+fieldset{
+background-color:#58d68d;
+border:2px solid black;
+width:500px;
+font-size:16px;
+padding-left:50px;
+margin:15px 10px 5px 60px;
+}
+
+legend{
+font-weight:bold;
+font-size:22px;
+padding-left:150px;
+}
+.button{
+border-radius:100px;
+width:60px;
+}
+
+</style>
+</head>
+<body>
+<div>
+<fieldset>
+ <legend>USER FORM</legend>
+ <table>
+  <form>
+  <ul>
+    <tr>
+	 <td><label for="fname"><li>FIRST NAME</li></label></td>
+	 <td><input id="fname" type="text" name="firstname"></td>
+	</tr>
+	
+	<tr>
+	 <td><label for="pass"><li>PASSWORD</li></label></td>
+	 <td><input id="pass" type="password" name="password"></td>
+	</tr>
+	
+	<tr>
+	 <td><label><li>GENDER</li></label></td>
+	 
+	 <td><input id="male" type="radio" name="gender">
+	     <label for="male">Male</label>
+		 <input id="female" type="radio" name="gender">
+	     <label for="female">Female</label>
+	 </td>
+	</tr>
+	
+	<tr>
+	 <td><label><li>ADDRESS</li></label></td>
+	 <td><textarea></textarea></td>
+	</tr>
+	
+	<tr>
+	 <td><label><li>D.O.B</li></label></td>
+	 <td><input type="date"></td>
+	</tr>
+	
+	<tr>
+	<td><label><li>SELECT GAMES</li></label></td>
+	
+	<td><input id="hockey" type="checkbox" name="game">
+	<label for="hockey">Hockey</label>
+	
+	<input id="football" type="checkbox" name="game">
+	<label for="football">Football</label>
+	
+	<input id="cricket" type="checkbox" name="game">
+	<label for="cricket">Cricket</label>
+	
+	<input id="volleyball" type="checkbox" name="game">
+	<label for="volleyball">Volleyball</label></td>
+	</tr>
+	
+	<tr>
+	 <td><label><li>MARITAL STATUS</li></label></td>
+	 <td><input id="married" type="radio" name="maristatus">
+	    <label for="married">Married</label>
+		<input id="unmarried" type="radio" name="maristatus">
+		<label for="unmarried">Unmarried</label></td>
+	</tr>
+	
+	<tr>
+	<td></td>
+  <td colspan="2"><input class="button" type="button" value="Submit">
+  <input class="button" type="button" value="Reset"></td>
+  </tr>
+  
+  <tr>
+  <td></td>
+  <td><input id="agrement" type="checkbox">
+      <label for="agrement">I accept this agrement</label></td>
+  </tr>
+    </ul>
+  </form>
+ </table>
+</fieldset> 
+</div>
+</body>
+</html>

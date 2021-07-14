@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>formassi2</title>
+
+<style>
+
+table,th,td{
+  border-collapse:collapse;
+  border:1px solid gray;
+  background-color:#2B1B17;
+  color:yellow;
+  margin:100px 500px;
+  font-size:22px;
+  padding:8px 0;
+ }
+
+ .header{
+  background-color:#FF8C00;
+  text-align:left;
+ }
+ 
+ label{
+ padding-left:20px;
+ }
+ 
+ input,select{
+ margin-left:10px;
+ }
+ 
+ .button{
+ border-radius:100px;
+ padding:5px 10px;
+ 
+ }
+ 
+ .bgcol{
+ background-color:#FF8C00;
+ text-align:right;
+ }
+ 
+</style>
+</head>
+<body>
+ <table>
+  <form>
+  
+  <tr>
+  <th colspan="2" class="header" >Sign Up</th>
+  </tr>
+  
+  <tr>
+  <td><label for="fname">First Name</label></td>
+  <td><input class="fname" id="namee" type="text" name="firstname" placeholder="Enter First Name"></td>
+  </tr>
+  
+  <tr>
+  <td><label for="lname">Last Name</label></td>
+  <td><input class="lname" id="namee" type="text" name="lastname" placeholder="Enter Last Name"></td>
+  </tr>
+  
+  <tr>
+  <td><label>Date of Birth</label></td>
+  <td><input type="date"></td>
+  </tr>
+  
+  <tr>
+  <td><label>Gender</label></td>
+  <td><input id="male" type="radio" name="gender">
+      <label for="male">Male</label>
+	  <input id="female" type="radio" name="gender">
+      <label for="female">Female</label></td>
+  </tr>
+  
+  <tr>
+  <td><label>Country</label></td>
+  <td><select>
+       <option value="">Country</option>
+	   <option value="18">Australia</option>
+	   <option value="19">Bangladesh</option>
+	   <option value="20">Canada</option>
+	   <option value="21">France</option>
+	   <option value="22">India</option>
+	   <option value="23">Japan</option>
+      </select></td>
+  </tr>
+  
+  <tr>
+  <td><label for="email">E-mail</label></td>
+  <td><input id="email" type="email" name="emailid" placeholder="Enter E-mail"></td>
+  </tr>
+  
+  <tr>
+  <td><label for="phonenum">Phone</label></td>
+  <td><input id="phonenum" type="tel" name="phonenumber" placeholder="Enter phone"></td>
+  </tr>
+  
+  <tr>
+  <td><label for="pass">Password</label></td>
+  <td><input id="pass" type="password" name="password"></td>
+  </tr>
+  
+  <tr>
+  <td><label for="pass">Confirm Password</label></td>
+  <td><input id="pass" type="password" name="password"></td>
+  </tr>
+  
+  <tr>
+  <td></td>
+  <td colspan="2"><input id="checbx" type="checkbox" name="checkbox">
+  <label for="checbx">I Agree to the Terms of use</label></td>
+  </tr>
+  
+  <tr>
+  <td colspan="2" class="bgcol"><input class="button" type="button" value="Submit">
+  <input class="button" type="button" value="Cancel"></td>
+  </tr>
+  
+  </form>
+ </table>
+</body>
+</html>
